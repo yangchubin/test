@@ -23,7 +23,7 @@ public class UserController {
 	private String list(Model m) {
 		
 		List<User> users = userService.selectList();
-		
+		System.out.println("测试github");
 		m.addAttribute("users", users);
 		//配置视图解析器后，无需写地址前缀和后缀
 		return "userList";
